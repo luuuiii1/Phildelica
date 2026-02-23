@@ -13,13 +13,13 @@ const products = [
   { name: "Egg Pie", price: 100, image: "img/eggpie.jpg", description: "Classic Filipino egg custard pie with golden top.", category: "Desserts" },
   { name: "Espasol", price: 90, image: "img/espasol.jpg", description: "Rice flour and coconut sweet snack rolled in toasted rice flour.", category: "Snacks" },
   { name: "Kapeng Barako", price: 100, image: "img/kapengbarako.jpg", description: "Strong and bold coffee from Batangas.", category: "Drinks" },
-  { name: "Kutsinta", price: 60, image: "img/kutsinta.jpg", description: "Chewy brown rice cake topped with grated coconut.", category: "Kakanin" },
+  { name: "Kutsinta", price: 60, image: "img/Kutsinta.jpg", description: "Chewy brown rice cake topped with grated coconut.", category: "Kakanin" },
   { name: "Leche Flan", price: 150, image: "img/lecheflan.jpg", description: "Smooth and creamy caramel custard.", category: "Desserts" },
-  { name: "Maja Blanca", price: 120, image: "img/majablanca.jpg", description: "Coconut milk pudding topped with corn.", category: "Desserts" },
+  { name: "Maja Blanca", price: 120, image: "img/Majablanca.jpg", description: "Coconut milk pudding topped with corn.", category: "Desserts" },
   { name: "Palitaw", price: 70, image: "img/palitaw.jpg", description: "Flat sticky rice cakes coated in coconut and sugar.", category: "Kakanin" },
   { name: "Pichi Pichi", price: 80, image: "img/Pichi-Pichi.jpg", description: "Steamed cassava dessert rolled in grated coconut.", category: "Kakanin" },
   { name: "Polvoron", price: 50, image: "img/polvoron.jpg", description: "Sweet and crumbly shortbread made with toasted flour.", category: "Snacks" },
-  { name: "Puto", price: 60, image: "img/puto.jpg", description: "Soft steamed rice cakes, often served with cheese.", category: "Kakanin" },
+  { name: "Puto", price: 60, image: "img/Puto.jpg", description: "Soft steamed rice cakes, often served with cheese.", category: "Kakanin" },
   { name: "Samalamig", price: 40, image: "img/samalamig.jpg", description: "Chilled sweet drinks, perfect for hot days.", category: "Drinks" },
   { name: "Sapin-Sapin", price: 70, image: "img/sapin2.jpg", description: "Colorful layered sticky rice dessert.", category: "Kakanin" },
   { name: "Suman", price: 60, image: "img/suman.jpg", description: "Sticky rice wrapped in banana leaves.", category: "Kakanin" },
@@ -198,4 +198,5 @@ function generateReceipt() {
 // ================================
 displayProducts();
 updateCart();
+
 
