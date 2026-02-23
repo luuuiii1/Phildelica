@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhilDelica</title>
+    <meta name="description" content="PhilDelica Website">
+    <meta name="keywords" content="PhilDelica, Deli, Food, Restaurant">
+    <meta name="author" content="PhilDelica Team">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<header> 
+    <div class="header-content">
+        <a class="brand" href="home.html">
+            <img src="img/phildelicalogo.png" alt="PhilDelica Logo">
+            <b>PhilDelica: Filipino Delicacies</b>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a class="btn" href="home.html">Home</a></li>
+                <li><a class = "btn" href="products.html">Products</a></li>
+                <li><a class = "btn" href="about.html">About</a></li>
+                <li><a class="btn" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<div class="products-section">
+    <div class="top-bar">
+        <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+        <button onclick="openCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </div>
+    <div id="product-list"></div>
+</div>
+
+<!-- CART MODAL -->
+<div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close" onclick="closeCart()">×</span>
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <p>Total: ₱<span id="cart-total">0</span></p>
+        <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
+    </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div id="checkoutModal" class="cart-modal">
+    <div class="cart-content">
+        <span class="close" onclick="closeCheckout()">×</span>
+        <h3>Checkout</h3>
+        <input type="text" id="customerName" placeholder="Your Name">
+        <input type="text" id="customerAddress" placeholder="Address">
+        <button class="checkout-btn" onclick="generateReceipt()">Generate Receipt</button>
+        <div id="receipt"></div>
+    </div>
+</div>
+
+<!-- DESCRIPTION MODAL -->
+<div id="descriptionModal" class="description-modal">
+    <div class="description-content">
+        <span id="descClose" class="close-description">Close</span>
+        <img id="descImage" src="" alt="">
+        <h3 id="descName"></h3>
+        <p id="descText"></p>
+        <p id="descPrice"></p>
+    </div>
+</div>
+
+<footer>
+        <div class="wrap">
+            <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+            <div>© <span id="year"></span> Phildelica — All rights reserved.</div>
+            </div>
+    </footer>
+</body>
+</html>

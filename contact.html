@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhilDelica</title>
+    <meta name="description" content="PhilDelica Website">
+    <meta name="keywords" content="PhilDelica, Deli, Food, Restaurant">
+    <meta name="author" content="PhilDelica Team">   
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="deli.js" defer></script>
+</head>
+
+<body>
+<header> 
+    <div class="header-content">
+        <a class="brand" href="contact.html">
+            <img src="img/phildelicalogo.png" alt="PhilDelica Logo">
+            <b>PhilDelica: Filipino Delicacies</b>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a class = "btn" href="home.html">Home</a></li>
+                <li><a class = "btn" href="products.html">Products</a></li>
+                <li><a class = "btn" href="about.html">About</a></li>
+                <li><a class = "btn" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="wrap">
+    <div class="contact-section">
+         <img src="img/owo.png" alt="design" class="corner-img top-right"> <img src="img/gdan.png" alt="design" class="corner-img bottom-left">
+        <h1>Contact Us</h1>
+        <p>Have questions or want to place an order? Reach out to us!</p>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</main>
+<footer>
+        <div class="wrap">
+            <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+            <div>© <span id="year"></span> Phildelica — All rights reserved.</div>
+            </div>
+    </footer>
+</body>
+</html>
