@@ -365,7 +365,7 @@ header {
 
 .ccorner-img {
   position: absolute;
-  width: 280px;       /* adjust size */
+  width: 200px;       /* adjust size */
   opacity: 0.9;       /* optional transparency */
   z-index: 1;         /* make sure it's above background */
 }
@@ -463,4 +463,5 @@ footer {
   font-size: 0.9rem;
   color :#160d0d;
 }
+
 
