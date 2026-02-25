@@ -343,6 +343,7 @@ header {
   background: linear-gradient(to right, #efd581, #ffe082);
   padding: 1rem;
   border-radius: 12px; 
+  margin-bottom: 2rem;
 }
 .p {
     font-size: 1.2rem;
@@ -463,6 +464,7 @@ footer {
   font-size: 0.9rem;
   color :#160d0d;
 }
+
 
 
 
